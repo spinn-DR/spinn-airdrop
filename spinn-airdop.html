@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="bitcoinjs-message.js"></script>
+<style>
+</style>
+</head>
+<body>
+<h1>bitcoinjs-message</h1>
+<p>Simple open-source UI for using bitcoinjs-message to sign messages with a private key.</p>
+<h2 style="color: red;">THIS TOOL IS FOR OFFLINE USE ONLY!</h2>
+<h3>NEVER ENTER YOUR PRIVATE KEY INTO AN ONLINE MACHINE!</h3>
+<label for="u1">Address Type: </label><select style="width: 98%; padding: 7px; font-size: 18px;" id="u1"><option>SELECT</option><option value="p2pkh">P2PKH (Starts with 1)</option><option value="p2shp2wpkh">P2SH-P2WPKH (Starts with 3)</option><option value="p2wkh">P2WPKH (Starts with bc)</option></select>
+<label for="u2">Message:</label><input type="text" name="u2" id="u2" style="width: 98%; padding: 7px; font-size: 18px;" placeholder="Example message: Confirming bitcointalk user YOUR_BTCTALK_USERNAME signing up for airdrop.">
+<label for="u3">WIF Private Key:</label><input type="password" name="u3" id="u3" style="width: 98%; padding: 7px; font-size: 18px;">
+<button style="margin: 5px; display: block; cursor: pointer; padding: 10px; font-size: 20px; background-color: #0275d8; color: #fff;" onclick="return execsignmsg();">Sign Message</button>
+<textarea rows="10" id="o1" style="display: none; width: 98%; padding: 7px; font-size: 18px;"></textarea>
+<script>
+function execsignmsg(){
+	let usrtype = document.getElementById("u1").value;
+	let usrmsg = document.getElementById("u2").value;
+	let usrwif = document.getElementById("u3").value;
+	let usrsig = bmsg.signMessage(usrwif, usrmsg, usrtype);
+	document.getElementById("o1").style.display = "block";
+	let outtxt = document.getElementById("o1");
+	outtxt.value = '';
+	outtxt.value += '----- BEGIN MESSAGE ----- \r\n';
+	outtxt.value += '\r\n';
+	outtxt.value += usrmsg + '\r\n';
+	outtxt.value += '\r\n';
+	outtxt.value += '----- END MESSAGE ----- \r\n';
+	outtxt.value += '----- BEGIN SIGNATURE ----- \r\n';
+	outtxt.value += '\r\n';
+	outtxt.value += usrsig + '\r\n';
+	outtxt.value += '\r\n';
+	outtxt.value += '----- END SIGNATURE ----- \r\n';
+}
+</script>
+</body>
+</html>
