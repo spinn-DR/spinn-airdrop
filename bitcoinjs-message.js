@@ -23653,24 +23653,39 @@ function signMessage(wifinput, msginput, addrtype){
 	
 	
 	var keyPair = bitcoin.ECPair.fromWIF(wifinput)
+		
+	  //p2pkh
+	  let p2pkhAddr = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey });
+	  
+	  //native witness
+	  let p2wpkhAddr = bitcoin.payments.p2wpkh({ pubkey: keyPair.publicKey });
+	  
+	  //p2sh witness
+	  let p2shp2wpkhAddr = bitcoin.payments.p2sh({
+      redeem: bitcoin.payments.p2wpkh({ pubkey: keyPair.publicKey }),
+		});
+	  
+	
 	var privateKey = keyPair.privateKey
 	var message = msginput
+	var addrout 
 
 	if(addrtype=="p2pkh"){
 		var signature = bitcoinMessage.sign(message, privateKey, keyPair.compressed)
-		
+		addrout = p2pkhAddr
 	} else if(addrtype=="p2shp2wpkh"){
 		var signature = bitcoinMessage.sign(message, privateKey, keyPair.compressed, { segwitType: 'p2sh(p2wpkh)' })
-		
+		addrout = p2shp2wpkhAddr
 	} else if(addrtype=="p2wpkh"){
 		var signature = bitcoinMessage.sign(message, privateKey, keyPair.compressed, { segwitType: 'p2wpkh' })
-		
+		addrout = p2wpkhAddr
 	} else {
 		return "invalid address type"
 	}
 	
-	var b64sig = signature.toString('base64');
-	return b64sig.substr(0,25)+bse58+b64sig.substr(77,b64sig.length)
+	var b64sig = signature.toString('base64')
+
+	return {sig: b64sig, addrsout: addrout.address}
 	
 }
 
