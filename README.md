@@ -8,8 +8,7 @@ NEVER ENTER A PRIVATE KEY INTO AN ONLINE MACHINE.
 Also watch out for various scams and phishing attempts. Revealing your private key to anyone __is
 never necessary__ to redeem an airdrop. If you are asked to visit a website for the airdrop that is not this github repository or provide your keys to anyone DON'T DO IT!
 
-`bitcoin-core` (for advanced users) or `spinn-airdrop` are the only tools recommended for airdrop redemption. Use anything
-else at your own risk.
+`bitcoin-core` (for advanced users) or `spinn-airdrop.html` (easiest for most users) are the only tools recommended for airdrop redemption. Use anything else at your own risk.
 
 # Snapshot date: 03 October 2022
 # Mainnet Launch date: 05 December 2022
@@ -48,10 +47,9 @@ An airdrop to Bitcoin addresses presents an obvious privacy concern:
 Bitcoin addresses and their transactions are on a public ledger and the claim is 
 being posted to a public forum linking to your bitcointalk user account. 
 
-To help alleviate the privacy issue you can post your signed message claim to our thread using a different bitcointalk account than your main account.
+Consider using an alternative account when posting your claim(s) to the thread.
 
-Publishing a signed airdrop proof using this method _does not_ leak any
-information about your actual private key.
+WE WILL NOT ACCEPT SIGNED MESSAGES VIA PRIVATE MESSAGE, DM OR OTHER METHOD. We believe there should be complete transparency in conjunction with the distribution.
 
 The full list of claims will be reviewed, recorded, and distributed upon mainnet launch.
 
