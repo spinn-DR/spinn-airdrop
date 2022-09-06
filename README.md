@@ -34,7 +34,7 @@ The Spinn airdrop is eligible to anyone who owns non-custodial bitcoin ($BTC) as
 
 * Choose the addres type you are signing for (Legacy, P2SH Segwit, or Native Segwit).
 
-* Create a receiving Spinn address and keep it safe! (https://github.com/spinn-DR/spinn-wallet/releases)
+* Create a receiving Spinn address and keep it safe! (https://github.com/spinn-DR/spinn-wallet/releases) or create your own using our address specification (https://github.com/spinn-DR/Spinn/blob/main/spinn-address.md)
 
 * Input your message to sign "Claiming the Spinn Airdrop to my Spinn Address REPLACE-WITH-YOUR-SPINN-RECEIVING-ADDRESS" (MUST INCLUDE YOUR SPINN ADDRESS)
 
