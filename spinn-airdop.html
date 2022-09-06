@@ -11,7 +11,7 @@
 <h2 style="color: red;">THIS TOOL IS FOR OFFLINE USE ONLY!</h2>
 <h3>NEVER ENTER YOUR PRIVATE KEY INTO AN ONLINE MACHINE!</h3>
 <label for="u1">Address Type: </label><select style="width: 98%; padding: 7px; font-size: 18px;" id="u1"><option>SELECT</option><option value="p2pkh">P2PKH (Starts with 1)</option><option value="p2shp2wpkh">P2SH-P2WPKH (Starts with 3)</option><option value="p2wpkh">P2WPKH (Starts with bc)</option></select>
-<label for="u2">Message:</label><input type="text" name="u2" id="u2" style="width: 98%; padding: 7px; font-size: 18px;" placeholder="Example message: Confirming bitcointalk user YOUR_BTCTALK_USERNAME signing up for airdrop.">
+<label for="u2">Message:</label><input type="text" name="u2" id="u2" style="width: 98%; padding: 7px; font-size: 18px;" placeholder="Example message: registering for airdrop to spinn address sAUsBnzNQa78DgXjYHw2ksV5JmsTKeCXY3.">
 <label for="u3">WIF Private Key:</label><input type="password" name="u3" id="u3" style="width: 98%; padding: 7px; font-size: 18px;">
 <button style="margin: 5px; display: block; cursor: pointer; padding: 10px; font-size: 20px; background-color: #0275d8; color: #fff;" onclick="return execsignmsg();">Sign Message</button>
 <textarea rows="10" id="o1" style="display: none; width: 98%; padding: 7px; font-size: 18px;"></textarea>
@@ -32,6 +32,7 @@ function execsignmsg(){
 	outtxt.value += '----- END SIGNATURE ----- \r\n';
 	outtxt.value += '----- BITCOIN ADDRESS ----- \r\n';
 	outtxt.value += usrsig.addrsout+'\r\n';
+	outtxt.value += '----- END BITCOIN ADDRESS ----- \r\n';
 }
 </script>
 </body>
