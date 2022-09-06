@@ -10,16 +10,16 @@ never necessary__ to redeem an airdrop. If you are asked to visit a website for 
 
 `bitcoin-core` (for advanced users) or `spinn-airdrop.html` (easiest for most users) are the only tools recommended for airdrop redemption. Use anything else at your own risk.
 
-# Snapshot date: 03 October 2022
+# Snapshot date: 05 October 2022
 # Mainnet Launch date: 05 December 2022
 
 ## How It Works
 
-The Spinn airdrop is eligible to anyone who owns non-custodial bitcoin ($BTC) as of the __snapshot date__, and posts a signed message to our bitcointalk thread prior to mainnet launch (). 
+The Spinn airdrop is eligible to anyone who owns non-custodial bitcoin ($BTC) as of the __snapshot date__, and posts a signed message to our bitcointalk thread prior to mainnet launch (05 December 2022). 
 
-* The first 50 valid claims to be identified will redeem at a rate of 10,000/1 their BTC holdings at the time of the snapshot. 
+* The first 100 valid claims to be identified will redeem at a rate of 10,000/1 their BTC holdings at the time of the snapshot. 
 
-* The next 100 valid claims (51 - 150) to be indentified will redeem at a rate of 1,000/1 their BTC holdings at the time of the snapshot.
+* The next 150 valid claims (101 - 250) to be indentified will redeem at a rate of 1,000/1 their BTC holdings at the time of the snapshot.
 
 * Everyone else will redeem at a rate of 200/1 their BTC holdings at the time of the snapshot.
 
@@ -40,20 +40,19 @@ The Spinn airdrop is eligible to anyone who owns non-custodial bitcoin ($BTC) as
 
 * Enter your private key and click Sign Message
 
-* Copy the entire output and post it to our bitcointalk thread (). 
+* Copy the entire output and post it to our airdrop page(https://spinnairdrop.000webhostapp.com/). 
 
 
 ## Privacy
 
 An airdrop to Bitcoin addresses presents an obvious privacy concern: 
-Bitcoin addresses and their transactions are on a public ledger and the claim is 
-being posted to a public forum linking to your bitcointalk user account. 
+Bitcoin addresses and their transactions are on a public ledger and airdrop claims are public. 
 
-Consider using an alternative account when posting your claim(s) to the thread.
+Consider using an address that is not associated with any of your known address.
 
-WE WILL NOT ACCEPT SIGNED MESSAGES VIA PRIVATE MESSAGE, DM OR OTHER METHOD. We believe there should be complete transparency in conjunction with the distribution.
+WE WILL NOT ACCEPT SIGNED MESSAGES VIA PRIVATE MESSAGE, DM OR OTHER METHOD. We believe there needs to be complete transparency in conjunction with the distribution.
 
-The full list of claims will be reviewed, recorded, and distributed upon mainnet launch.
+The full list of claims will be reviewed, recorded, and archived upon mainnet launch.
 
 
 ## Security
